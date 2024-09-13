@@ -118,3 +118,19 @@ git reset --hard HEAD@{3}
 ````
 
 He usado un HEAD@{3} porque es el que necesitaba al haber hecho algun commit y checkout intermedio
+
+
+**- ¿Qué comando o comandos utilizaste en el paso 29?**
+
+
+Para eliminar la rama title primero tengo que estar en la rama main y ejecutar el siguiente comando
+
+```
+
+git branch -d title
+
+```
+
+** ¿Qué comando o comandos utilizaste en el paso 30?**
+
+Para rehacer el merge es la misma dinámica contestada en la pregunta 28 del README.md
