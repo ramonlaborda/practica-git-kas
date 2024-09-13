@@ -131,6 +131,26 @@ git branch -d title
 
 ```
 
-** ¿Qué comando o comandos utilizaste en el paso 30?**
+**- ¿Qué comando o comandos utilizaste en el paso 30?**
 
 Para rehacer el merge es la misma dinámica contestada en la pregunta 28 del README.md
+
+
+**- ¿Qué comando o comandos utilizaste en el paso 32?**
+
+Para volver al primer commit use los siguientes comandos
+
+```
+
+git log
+
+git checkout af237a3b5261c9e2698a116626321224d68c5206   
+
+```
+
+Me desplace a través del log y copie el hash largo para después pasarselo al checkput
+
+**- ¿Qué comando o comandos utilizaste en el paso 33?**
+
+Hice lo mismo pero de forma inversa. En vez de usar `git log`tuve que usar `git reflog` ya que estaba en el primer commit.
+Por últio como el HEAD estaba detached, volví a la rama main usando un `git branch main`.
