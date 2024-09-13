@@ -154,3 +154,6 @@ Me desplace a través del log y copie el hash largo para después pasarselo al c
 
 Hice lo mismo pero de forma inversa. En vez de usar `git log`tuve que usar `git reflog` ya que estaba en el primer commit.
 Por últio como el HEAD estaba detached, volví a la rama main usando un `git branch main`.
+
+
+*Nota: Completados todos los ejercicios.*
