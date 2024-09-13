@@ -77,3 +77,44 @@ git log --graph --decorate --oneline
 
 ```
 
+**- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
+
+Sí, podría ser fast forward perfectamente ya que main absorbe title que solo tiene un commit posterior en la línea cronológica.
+Se adelante el puntero de main a title absorbiendo los ficheros de title.
+
+Para hacer el merge utilicé el siguiente comando
+
+```
+
+git merge --no-ff title
+
+```
+
+**- ¿Qué comando o comandos utilizaste en el paso 27?**
+
+Para deshacer el merge utilice los siguientes comandos
+
+```
+
+git log
+git reset --merge f4ad14c
+
+```
+Primero detecto el commit en el que estoy (tras el merge) y busco el hash del commit anterior al merge.
+Ejecuto un reset --merge para no perder los cambios del working copy.
+
+
+**- Qué comando o comandos utilizaste en el paso 28?**
+
+Para descartar los cambios (deshacer merge) y volver al merge original, de main absorve title con fast forward, ejecuto
+los siguientes comandos
+
+```
+
+git reflog
+
+git reset --hard HEAD@{3}
+
+````
+
+He usado un HEAD@{3} porque es el que necesitaba al haber hecho algun commit y checkout intermedio
