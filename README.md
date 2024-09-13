@@ -69,5 +69,11 @@ de main a styled absorviendolo. Los ficheros de forma automática han cambiado a
 más avanzados evitando conflictos.
 
 
+**- ¿Qué comando o comandos utilizaste en el paso 25?**
 
+```
+
+git log --graph --decorate --oneline
+
+```
 
