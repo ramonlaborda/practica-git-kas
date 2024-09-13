@@ -59,3 +59,15 @@ nano git-nuestro.md
 Y nos quedamos con la parte del .md que no tiene codigo html (nos quedamos con el fichero de styled)
 
 Después volvemos a añadir el fichero al staging area y a ejecutar el merge.
+
+
+**- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?**
+
+Para hacer el merge, hemos ejecutado un checkout a la rama main y después un merge.
+Como es fast forward y la rama main estaba alineada temporalmente (no había commits de esa rama) el puntero ha cambiado 
+de main a styled absorviendolo. Los ficheros de forma automática han cambiado a como estaban en styled al encontrarse 
+más avanzados evitando conflictos.
+
+
+
+
